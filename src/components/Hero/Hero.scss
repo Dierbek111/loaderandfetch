@@ -1,0 +1,142 @@
+.hero__wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.hero__card{
+  border: 1px  solid black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0  10px 0 rgba(0, 0, 0, 0.514)
+}
+h2{
+  margin-bottom: 10px;
+}
+
+
+body {
+  background: #EEE;
+  margin: 0;
+  overflow: hidden;
+}
+
+preloader {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  margin: -40px 0 0 -40px;
+}
+
+preloader > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -moz-animation: rotate-elements 8000ms infinite linear;
+  -o-animation: rotate-elements 8000ms infinite linear;
+  -webkit-animation: rotate-elements 8000ms infinite linear;
+  animation: rotate-elements 8000ms infinite linear;
+}
+
+preloader div div {
+  border-radius: 50%;
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  opacity: 0.1;
+}
+
+preloader div div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: #03A9F4;
+  -moz-animation: pulse-elements 1000ms infinite ease alternate;
+  -o-animation: pulse-elements 1000ms infinite ease alternate;
+  -webkit-animation: pulse-elements 1000ms infinite ease alternate;
+  animation: pulse-elements 1000ms infinite ease alternate;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+
+preloader div div:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: #F44336;
+  -moz-animation: pulse-elements 1000ms infinite ease alternate;
+  -o-animation: pulse-elements 1000ms infinite ease alternate;
+  -webkit-animation: pulse-elements 1000ms infinite ease alternate;
+  animation: pulse-elements 1000ms infinite ease alternate;
+  -moz-animation-delay: 250ms;
+  -o-animation-delay: 250ms;
+  -webkit-animation-delay: 250ms;
+  animation-delay: 250ms;
+}
+
+preloader div div:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: #8BC34A;
+  -moz-animation: pulse-elements 1000ms infinite ease alternate;
+  -o-animation: pulse-elements 1000ms infinite ease alternate;
+  -webkit-animation: pulse-elements 1000ms infinite ease alternate;
+  animation: pulse-elements 1000ms infinite ease alternate;
+  -moz-animation-delay: 500ms;
+  -o-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+preloader div div:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: #FFC107;
+  -moz-animation: pulse-elements 1000ms infinite ease alternate;
+  -o-animation: pulse-elements 1000ms infinite ease alternate;
+  -webkit-animation: pulse-elements 1000ms infinite ease alternate;
+  animation: pulse-elements 1000ms infinite ease alternate;
+  -moz-animation-delay: 750ms;
+  -o-animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
+  animation-delay: 750ms;
+}
+
+@keyframes rotate-elements {
+  from {
+    transform: rotate(-180deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes pulse-elements {
+  from {
+    top: -50%;
+    left: -50%;
+    transform: scale(1.0);
+    opacity: 0;
+  }
+  
+  to {
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+}
